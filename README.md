@@ -1,5 +1,3 @@
-Här är info om hur du installerar Mainsail och Klipper.
-
 # Mainsail
 Installera mainsail enligt stegen på [deras hemsida](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) utan följ instruktionerna i detta dokument istället.
 
@@ -33,3 +31,7 @@ Du kan behöva ladda om sidan för att kameran ska fungera.
 
 ## Octoeverywhere (Mainsail utanför närverket)
 Följ [deras officiella instruktioner](https://octoeverywhere.com/dashboard?source=mainsail_docs). För en översikt av olika lösningar så finns [mainsails hemsida](https://docs.mainsail.xyz/overview/quicktips/remote-access).
+
+## TODO
+Filament load/unload macros
+Prusa Slicer configs (klipper flavoured gcode)
