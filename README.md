@@ -32,6 +32,11 @@ Du kan behöva ladda om sidan för att kameran ska fungera.
 ## Octoeverywhere (Mainsail utanför närverket)
 Följ [deras officiella instruktioner](https://octoeverywhere.com/dashboard?source=mainsail_docs). För en översikt av olika lösningar så finns [mainsails hemsida](https://docs.mainsail.xyz/overview/quicktips/remote-access).
 
+## Problems
+I can't get input shaping to work. Dö not just use the input shaper present in prisa slicer, that makes my prints fall everytime.
+
+Purging immidiately afterwards fixes it for me.
+
 ## TODO
 Filament load/unload macros
 Prusa Slicer configs (klipper flavoured gcode)
