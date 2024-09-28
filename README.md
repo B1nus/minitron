@@ -14,13 +14,24 @@ This project is not even close to being finished. I have yet to print the parts 
 # Credit
 Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help while trying to model my own printer.
 
+# BOM (Bill of Materials)
+- Raspberry Pi
+- PTFE tube
+- LM8UU linear bearing
+- GT2 belt 6mm
+- GT2 idlers (6mm belt, 3mm bore)
+  
+- (Optional but recommended) Pi Camera Module v2.1
+
 # Klipper
 This printer uses klipper, you can also try [this modified prusa firmware](https://github.com/Snake-Edition/P32-FW/releases) if you're uncomfortable with klipper.
 
 ## Mainsail OS
-Mainsail is the operating system you will run on your control board, that is your raspberry pi sitting beside your printer. Mainsail handle the webinterface, starting prints, sending gcode and basically anything except for hardware, that's your Prusa Buddy Boards job. 
+Mainsail is the operating system you will run on your control board (the raspberry pi). Mhttps://klipperbackup.xyz/ainsail handles the webinterface, starting prints, sending gcode and basically anything except for hardware, that's your Prusa Buddy Boards job. [Install Mainsal here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot).
 
-[Install Mainsal here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot).
+## Backups
+I broke my sd card to my printer once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
+
 
 # SSH
 Vid steget [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) måste du fixa med ditt nätverk. Starta din Raspberry Pi och kolla ip addressen med ethernet inkopplat. Nu kan du börja använda ssh istället med kommandot `$ ssh 10.20.51.27`, det är enkelt att göra misstag om man kopierar för hand så jag rekommenderar starkt att använda ssh och installations skriptet.
