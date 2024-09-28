@@ -12,13 +12,14 @@ We can implement CoreXY without needing a frame, which means you don't need to b
 This project is not close to being finished. I have yet to print the parts for the first prototype, please bear with me.
 
 # BOM (Bill of Materials)
+### Needed
 - PTFE tube
 - LM8UU linear bearing
 - GT2 belt 6mm
 - GT2 idlers (6mm belt, 3mm bore)
-
-- (Optional for those who want Klipper/Mainsail) Raspberry Pi
-- (Optional but recommended for Mainsail) Pi Camera Module v2.1
+### Optional
+- (for those who want Klipper/Mainsail) Raspberry Pi
+- (Not necessary, but recommended for Mainsail) Pi Camera Module v2.1
 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
