@@ -4,11 +4,9 @@ Transform your Prusa Mini into a Upside down CoreXY printer.
 ![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/blob/main/Images/CAD-dark.png)
 
 # Why Upside Down
-Because it looks cool.
+Because it looks cool. ;)
 
-Also so we can implement CoreXY without needing a frame, which means you don't need to buyextrusion for this mod. The lower center of mass should also help with stability and ringing.
-
-Also, you get about 4 cm more print volume on the z axis.
+We can implement CoreXY without needing a frame, which means you don't need to buy extrusion for this mod. The lower center of mass should also help with stability and ringing. Another bonus are the 4 extra centimeters of print height.
 
 # WARNING
 This project is not even close to being finished. I have yet to print the parts and try the first prototype, hopefully, I wall be able to iterate to a functional version fast.
