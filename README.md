@@ -27,14 +27,36 @@ MainsailOS is the operating system you will run on your control board (the raspb
 
 If you're using the rtl8188eu wifi adapter you should follow [these instruction](#rtl8188eu) to get wifi working.
 
+## Installing Klipper
+To install third party firmware you need to put your printer int DFU mode. Do this by following [the official instructions](https://help.prusa3d.com/article/flashing-custom-firmware-mini_14). Basically you need to cut the appendix and then short circuit two pins at the same time as switching on the printer. The screen should be completely white if done correctly. Connect the printer to your Raspberry Pi and proceed with these commands:
+
+First run `$ cd ~/klipper`
+Then `$ make menuconfig` and choose:
+- Enable extra low-level configuration options
+- STMicroelectronics STM32
+- STM32F407
+- No Bootloader
+- Clock Reference 12 Mhz crystal
+- Communication interface USB (on PA11/PA12)
+
+Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
+
+## Klipper konfiguration
+My configuration is backed up automatically to *printer_data/klipper_config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file.
+
+# Extras
+## Camera
+Check crowsnests logs to find the search path to your camera. Set *cam > device* in the file *crowsnest.conf* to this path. Sometimes it takes a while for the camera to load, you might need to refresh the page as well.
+
 ## Remote Control (Octoeverywhere)https://help.prusa3d.com/article/flashing-custom-firmware-mini_14
 Follow [their official instructions](https://octoeverywhere.com/dashboard?source=mainsail_docs). To learn of other solutions visit [mainsails page](https://docs.mainsail.xyz/overview/quicktips/remote-access).
 
 ## Backups
 I broke my sd card to my printer once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
 
-#rtl8188eu
-Install the drivers with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). I prefer a static ip address so my /etc/network/interfaces looks like this instead:
+# rtl8188eu
+This specific driver caused me some trouble. To fix it, install the driver with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). However, I prefer a static ip address so my /etc/network/interfaces looks like this instead:
+
 ```
 auto wlan0
 iface wlan0 inet static
@@ -44,35 +66,8 @@ gateway [insert gateway]
 broadcast [insert broadcast]
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf' > /etc/network/interfaces"
 ```
+
 To get all these values you need to connect the Raspberry Pi to ethernet and run ```ifconfig```.
 
-## Installing Klipper
-To install third party firmware you need to put your printer int DFU mode. Do this by following [the official instructions](https://help.prusa3d.com/article/flashing-custom-firmware-mini_14). Basically, it boils down to cuting the appendix and then short circuing the appendix pins at the same time as switching on the printer. The screen should be completely white.
-
-## Klipper, taget från [denna video av KennsKustoms](https://www.youtube.com/watch?v=6KAFPcL1O-4)
-Gå in i klipper mappen `$ cd ~/klipper`
-Starta klipper konfigurationen `$ make menuconfig` och välj inställningarna:
-    Enable extra low-level configuration options
-    STMicroelectronics STM32
-    STM32F407
-    No Bootloader
-    Clock Reference 12 Mhz crystal
-    Communication interface USB (on PA11/PA12)
-
-Kör kommandot `$ lsusb` och letar efter en enhet med DFU i namnet. Använd den enhetens id och kör kommandot `make flash FLASH_DEVICE=[id]` där id är enhetens id.
-
-## Klipper konfiguration
-Kopiera innehållet av *printer.cfg* till klipper genom mainsails interface. Kör kommandot `ls /dev/serial/by-id/*` och använd värdet för att ändra *mcu > serial* i *printer.cfg*.
-
-## Kamera (RPI Camera Module v2.1)
-Kolla Crowsnests log för att hitta vilken sökväg din camera har. Sedan sätter du denna under *cam > device* i filen *crowsnest.conf*.
-
-Du kan behöva ladda om sidan för att kameran ska fungera.
-
-## Problems
-I can't get input shaping to work. Dö not just use the input shaper present in prisa slicer, that makes my prints fall everytime.
-
-Purging immidiately afterwards fixes it for me.
-
 # Credit
-Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help while trying to model my own printer.
+Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help for me when making my models.
