@@ -25,7 +25,7 @@ This project is not even close to being finished. I have yet to print the parts 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
 
-If you're using the rtl8188eu wifi adapter you should follow [these instruction](# TP-link drivers for rtl8188eu) to get wifi working.
+If you're using the rtl8188eu wifi adapter you should follow [these instruction](#rtl8188eu) to get wifi working.
 
 ## Remote Control (Octoeverywhere)https://help.prusa3d.com/article/flashing-custom-firmware-mini_14
 Follow [their official instructions](https://octoeverywhere.com/dashboard?source=mainsail_docs). To learn of other solutions visit [mainsails page](https://docs.mainsail.xyz/overview/quicktips/remote-access).
@@ -33,7 +33,7 @@ Follow [their official instructions](https://octoeverywhere.com/dashboard?source
 ## Backups
 I broke my sd card to my printer once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
 
-# TP-link drivers for rtl8188eu
+#rtl8188eu
 Install the drivers with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). I prefer a static ip address so my /etc/network/interfaces looks like this instead:
 ```
 auto wlan0
