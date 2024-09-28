@@ -1,18 +1,17 @@
 # Minitron
-Transofmr your Prusa Mini into a Upside down CoreXY printer.
+Transform your Prusa Mini into a Upside down CoreXY printer.
+
+![Screenshot of the positron CAD project](http://url/to/img.png)
 
 # Why Upside Down
 Because it looks cool.
 
-Also. We can implement CoreXY without needing a frame, which means you don't need to buy any new extrusion for this mod. The lower center of mass should also help with stability and ringing should be decreased.
+Also so we can implement CoreXY without needing a frame, which means you don't need to buyextrusion for this mod. The lower center of mass should also help with stability and ringing.
 
 Also, you get about 4 cm more print volume on the z axis.
 
 # WARNING
 This project is not even close to being finished. I have yet to print the parts and try the first prototype, hopefully, I wall be able to iterate to a functional version fast.
-
-# Credit
-Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help while trying to model my own printer.
 
 # BOM (Bill of Materials)
 - Raspberry Pi
@@ -26,12 +25,18 @@ Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer
 # Klipper
 This printer uses klipper, you can also try [this modified prusa firmware](https://github.com/Snake-Edition/P32-FW/releases) if you're uncomfortable with klipper.
 
-## Mainsail OS
-Mainsail is the operating system you will run on your control board (the raspberry pi). Mhttps://klipperbackup.xyz/ainsail handles the webinterface, starting prints, sending gcode and basically anything except for hardware, that's your Prusa Buddy Boards job. [Install Mainsal here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot).
+## MainsailOS
+MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based).
+
+## Problems with Wifi Dongle TP-link rtl8188eu
+
+Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot).
+
+## Remote Control (Octoeverywhere)
+
 
 ## Backups
 I broke my sd card to my printer once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
-
 
 # SSH
 Vid steget [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) måste du fixa med ditt nätverk. Starta din Raspberry Pi och kolla ip addressen med ethernet inkopplat. Nu kan du börja använda ssh istället med kommandot `$ ssh 10.20.51.27`, det är enkelt att göra misstag om man kopierar för hand så jag rekommenderar starkt att använda ssh och installations skriptet.
@@ -69,6 +74,5 @@ I can't get input shaping to work. Dö not just use the input shaper present in 
 
 Purging immidiately afterwards fixes it for me.
 
-## TODO
-Filament load/unload macros
-Prusa Slicer configs (klipper flavoured gcode)
+# Credit
+Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help while trying to model my own printer.
