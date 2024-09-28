@@ -48,7 +48,7 @@ My configuration is backed up automatically to *printer_data/klipper_config*. Fe
 ## Camera
 Check crowsnests logs to find the search path to your camera. Set *cam > device* in the file *crowsnest.conf* to this path. Sometimes it takes a while for the camera to load, you might need to refresh the page as well.
 
-## Remote Control (Octoeverywhere)https://help.prusa3d.com/article/flashing-custom-firmware-mini_14
+## Remote Control (Octoeverywhere)
 Follow [their official instructions](https://octoeverywhere.com/dashboard?source=mainsail_docs). To learn of other solutions visit [mainsails page](https://docs.mainsail.xyz/overview/quicktips/remote-access).
 
 ## Backups
