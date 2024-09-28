@@ -1,5 +1,11 @@
+# Minitron
+Minitron is a Prusa Mini/Mini+ mod which transforms you're printer from ordinary to extra ordinary. The design is heavily inspired by Kralyn's Positron printer. The benefit with this design is less ringing, stable frame and a larger print volume but  most importanly it looks cool. The design is made to use as much of the original printer as possible, the only things you need to buy is the Positron 90 degree heatblock, a glassbead thermistor, some LM8UU linear bearings and some PTFE tubing.
+
+# WARNING
+This project is still under VERY heavy development. I have not hade the time to test the design, and I am almost 100% sure it won'r print on the first try. I appreciate any support nevertheless.
+
 # Mainsail
-Installera mainsail enligt stegen på [deras hemsida](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) utan följ instruktionerna i detta dokument istället.
+Install Mainsail [with help from their website](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). Glöm inte att din Raspberry Pi 2 endast startar med ett sd kort och inte en usb sticka. Fortsätt inte med [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) utan följ instruktionerna i detta dokument istället.
 
 # SSH
 Vid steget [First Boot](https://docs-os.mainsail.xyz/getting-started/first-boot) måste du fixa med ditt nätverk. Starta din Raspberry Pi och kolla ip addressen med ethernet inkopplat. Nu kan du börja använda ssh istället med kommandot `$ ssh 10.20.51.27`, det är enkelt att göra misstag om man kopierar för hand så jag rekommenderar starkt att använda ssh och installations skriptet.
