@@ -1,5 +1,5 @@
 # Minitron
-Minitron is a Prusa Mini/Mini+ mod which transforms you're printer from ordinary to extra ordinary. The design is heavily inspired by Kralyn's Positron printer. The benefit with this design is less ringing, stable frame and a larger print volume but  most importanly it looks cool. The design is made to use as much of the original printer as possible, the only things you need to buy is the Positron 90 degree heatblock, a glassbead thermistor, some LM8UU linear bearings and some PTFE tubing.
+Minitron is a Prusa Mini/Mini+ mod which transforms your printer from ordinary to extra ordinary. The design is heavily inspired by Kralyn's Positron printer. The benefit with this design is less ringing, stable frame and a larger print volume but  most importanly it looks cool. The design is made to use as much of the original printer as possible, the only things you need to buy is the Positron 90 degree heatblock, a glassbead thermistor, some LM8UU linear bearings and some PTFE tubing.
 
 # WARNING
 This project is still under VERY heavy development. I have not hade the time to test the design, and I am almost 100% sure it won'r print on the first try. I appreciate any support nevertheless.
