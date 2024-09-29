@@ -1,7 +1,7 @@
 # Minitron
 Turn your Prusa Mini into an upside-down CoreXY 3D Printer.
 
-![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/blob/main/Images/CAD-dark.png)
+![Screenshot of the positron CAD project](https://media.printables.com/media/prints/1022602/images/7765583_1d8a0b34-fdcd-4ac7-bbec-82615953f535_cc8bc1f8-8e4b-41ff-ae6b-990c46c4b0ce/thumbs/inside/1920x1440/png/cad-dark.webp)
 
 # Why Upside Down?
 Because it looks cool. ;)
