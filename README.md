@@ -75,4 +75,4 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf' > /etc/network/interfaces"
 To get all these values you need to connect the Raspberry Pi to ethernet and run ```ifconfig```.
 
 # Credit
-Credit to Prusa for the Prusa Mini and credit to Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers were a massive help for me when making my models.
+Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite for the JourneyMaker. All printers helped me a ton in making this printer.
