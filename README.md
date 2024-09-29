@@ -1,7 +1,7 @@
 # Minitron
 Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github repository covers the software side of the project, for build instructions and the bill of materials check out [the printables page](https://www.printables.com/model/1022602-minitron).
 
-![Screenshot of the positron CAD project](https://media.printables.com/media/prints/1022602/images/7765583_1d8a0b34-fdcd-4ac7-bbec-82615953f535_cc8bc1f8-8e4b-41ff-ae6b-990c46c4b0ce/thumbs/inside/1920x1440/png/cad-dark.webp)
+![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/cad-dark.png)
 
 # WARNING!
 This project is far from being finished. I have yet to print the parts for the first prototype, please bear with me.
@@ -25,10 +25,13 @@ Then `$ make menuconfig` and choose:
 
 Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
 
-## Klipper konfiguration
-My configuration is backed up automatically to *printer_data/config*. Feel free to use my config files. Don't forget to change the `rotation_distance` to `32` in the *printer.cfg* file if you're using the stock extruder.
+# Configuration
+My printer configuration is backed up automatically to this repository in *printer_data/config*. Feel free to use my config files. Don't forget to change the `rotation_distance` to `32` in the *printer.cfg* file if you're using the stock extruder.
 
 Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
+
+## Prusa Slicer Profiles
+TBD
 
 # Extras
 ## Camera
