@@ -25,7 +25,7 @@ This project is far from being finished. I have yet to print the parts for the f
 - (Not necessary!) [Raspberry Pi 2 Mount](https://www.printables.com/model/978537-raspberry-pi-2-model-b-mount-for-prusa-minimini)
 
 # Build instructions
-Use the CAD model to unserstand how to build the printer. Here's a link to the [Onshape document](https://cad.onshape.com/documents/bdba07cfb1c6cbca39f7ad6d/w/d4acb14181f8491cce1dc9c2/e/9745e20551a21d0f0c47736c?renderMode=0&uiState=66f93200321c431edb2c02a8) which will help you with screw names and such. Let me know if build instructions are needed or if anything is wrong with the Onshape doucment.
+Use the CAD model to understand the build process. Here's a link to the [Onshape document](https://cad.onshape.com/documents/bdba07cfb1c6cbca39f7ad6d/w/d4acb14181f8491cce1dc9c2/e/9745e20551a21d0f0c47736c?renderMode=0&uiState=66f93200321c431edb2c02a8) which will help you with screw names and such. Let me know if build instructions are needed or if anything is wrong with the Onshape doucment.
 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
