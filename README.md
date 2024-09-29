@@ -6,7 +6,7 @@ Transform your Prusa Mini into a Upside down CoreXY printer.
 # Why Upside Down
 Because it looks cool. ;)
 
-We can implement CoreXY without needing a frame, which means you don't need to buy extrusion for this mod. The lower center of mass should also help with stability and ringing. Another bonus are the 4 extra centimeters of print height.
+We can implement CoreXY without needing a frame, which means you don't need to buy extrusions for this mod. The lower center of mass should also help with stability and ringing. Another bonus are the 4 extra centimeters of print height.
 
 # WARNING
 This project is not close to being finished. I have yet to print the parts for the first prototype, please bear with me.
@@ -41,7 +41,7 @@ Then `$ make menuconfig` and choose:
 Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
 
 ## Klipper konfiguration
-My configuration is backed up automatically to *printer_data/config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file.
+My configuration is backed up automatically to *printer_data/config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file. To learn more about Klipper, check out their [documentation](https://www.klipper3d.org/pressure_advance.html).
 
 # Extras
 ## Camera
