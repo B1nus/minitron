@@ -42,7 +42,7 @@ Then `$ make menuconfig` and choose:
 Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
 
 ## Klipper konfiguration
-My configuration is backed up automatically to *printer_data/config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file. Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
+My configuration is backed up automatically to *printer_data/config*. Feel free to use my config files. Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html). Don't forget to change the `rotation_distance` to `32` in the *printer.cfg* file if you're using the stock extruder.
 
 # Extras
 ## Camera
