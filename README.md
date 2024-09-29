@@ -31,16 +31,17 @@ My printer configuration is backed up automatically to this repository in *print
 Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
 
 # Extras
-## Camera
+### Camera
 Check crowsnests logs to find the search path to your camera. Set *cam > device* in the file *crowsnest.conf* to this path. Sometimes it takes a while for the camera to load, you might need to refresh the page as well.
 
-## Remote Control (Octoeverywhere)
+### Remote Control (Octoeverywhere)
 Follow [their official instructions](https://octoeverywhere.com/dashboard?source=mainsail_docs). To learn of other solutions visit [mainsails page](https://docs.mainsail.xyz/overview/quicktips/remote-access).
 
-## Backups
+### Backups
 I broke my sd card once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
 
-# rtl8188eu
+# Technical detail
+### rtl8188eu
 This specific driver caused me some trouble. To fix it, install the driver with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). If you want to choose a specific ip address change your /etc/interfaces file to something like this:
 ```
 auto wlan0
