@@ -62,8 +62,7 @@ Follow [their official instructions](https://octoeverywhere.com/dashboard?source
 I broke my sd card once. Not fun. Nowdays I always backup my config files to github with [klipper-backup.git](https://github.com/Staubgeborener/klipper-backup?tab=readme-ov-file). Follow the instructions in their [documentation](https://klipperbackup.xyz/).
 
 # rtl8188eu
-This specific driver caused me some trouble. To fix it, install the driver with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). However, I prefer a static ip address so my /etc/network/interfaces looks like this instead:
-
+This specific driver caused me some trouble. To fix it, install the driver with this [excellent tutorial](https://gist.github.com/MBing/de297a8ae5e8a191c55a67a568d20d31) by [MBing](https://gist.github.com/MBing). If you want to choose a specific ip address change your /etc/interfaces file to something like this:
 ```
 auto wlan0
 iface wlan0 inet static
@@ -71,10 +70,9 @@ address [insert ip address]
 netmask [insert netmask]
 gateway [insert gateway]
 broadcast [insert broadcast]
-wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf' > /etc/network/interfaces"
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-
-To get all these values you need to connect the Raspberry Pi to ethernet and run ```ifconfig```.
+Get the values by running ```ifconfig``` on another device connected to the same wifi.
 
 # Credit
 Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite for the JourneyMaker. I wouldn't have been able to make this printer without you.
