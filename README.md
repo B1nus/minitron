@@ -27,7 +27,7 @@ MainsailOS is the operating system you will run on your control board (the raspb
 If you're using the rtl8188eu wifi adapter you should follow [these instruction](#rtl8188eu) to get wifi working.
 
 ## Installing Klipper
-To install third party firmware you need to put your printer int DFU mode. Do this by following [the official instructions](https://help.prusa3d.com/article/flashing-custom-firmware-mini_14). Basically you need to cut the appendix and then short circuit two pins at the same time as switching on the printer. The screen should be completely white if done correctly. Connect the printer to your Raspberry Pi and proceed with these commands:
+To install third party firmware you need to put your printer into DFU mode. Do this by following [the official instructions](https://help.prusa3d.com/article/flashing-custom-firmware-mini_14). Basically you need to cut the appendix and then short circuit two pins at the same time as switching on the printer. The screen should be completely white if done correctly. Connect the printer to your Raspberry Pi and proceed with these commands:
 
 First run `$ cd ~/klipper`
 Then `$ make menuconfig` and choose:
@@ -41,7 +41,7 @@ Then `$ make menuconfig` and choose:
 Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
 
 ## Klipper konfiguration
-My configuration is backed up automatically to *printer_data/config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file. To learn more about Klipper, check out their [documentation](https://www.klipper3d.org/pressure_advance.html).
+My configuration is backed up automatically to *printer_data/config*. Feel free to borrow my config files. Most importantly you should copy my *printer.cfg* file. Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
 
 # Extras
 ## Camera
