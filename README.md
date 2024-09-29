@@ -7,7 +7,7 @@ Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github reposito
 This project is far from being finished. I have yet to print the parts for the first prototype, please bear with me.
 
 # MainsailOS
-MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
+MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases). Please note that you won't have a place to mount the LCD screen, as this printer is designed to use Mainsail's web interface instead of the LCD.
 
 If you're using the rtl8188eu wifi adapter you should follow [these instruction](#rtl8188eu) to get wifi working.
 
