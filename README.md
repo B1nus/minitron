@@ -20,6 +20,7 @@ This project is not close to being finished. I have yet to print the parts for t
 ### Optional
 - (for those who want Klipper/Mainsail) Raspberry Pi
 - (Not necessary, but recommended for Mainsail) Pi Camera Module v2.1
+- (Not necessary, feel free to use the stock extruder) [Dual gear drive extruder](https://www.printables.com/model/946290-dual-gear-drive-extruder-for-prusa-minimini) (This is made by me and is also still in heavy development)
 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
