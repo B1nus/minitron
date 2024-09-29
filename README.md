@@ -26,12 +26,9 @@ Then `$ make menuconfig` and choose:
 Now run `lsusb` and look for a device with "DFU" in the name. Then run `make flash FLASH_DEVICE=[insert id here]` with the usb identifier found from `lsusb`.
 
 # Configuration
-My printer configuration is backed up automatically to this repository in *printer_data/config*. Feel free to use my config files. Don't forget to change the `rotation_distance` to `32` in the *printer.cfg* file if you're using the stock extruder.
+My printer configuration is backed up automatically to this repository in *printer_data/config*. Feel free to use my config files. Don't forget to change the `rotation_distance` to `32` in the *printer.cfg* file if you're using the stock extruder. My prusa slicer profiles are also in this repository in the folder *prusa_profiles*.
 
 Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
-
-## Prusa Slicer Profiles
-TBD
 
 # Extras
 ## Camera
