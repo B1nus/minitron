@@ -1,31 +1,10 @@
 # Minitron
-Turn your Prusa Mini into an upside-down CoreXY 3D Printer.
+Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github repository covers the software side of the project, for build instructions and the bill of materials check out [the printables page](https://www.printables.com/model/1022602-minitron).
 
 ![Screenshot of the positron CAD project](https://media.printables.com/media/prints/1022602/images/7765583_1d8a0b34-fdcd-4ac7-bbec-82615953f535_cc8bc1f8-8e4b-41ff-ae6b-990c46c4b0ce/thumbs/inside/1920x1440/png/cad-dark.webp)
 
-# Why Upside Down?
-Because it looks cool. ;)
-
-We can implement CoreXY without needing a frame, which means you don't need to buy extrusions for this mod. The lower center of mass should also help with stability and ringing. Another bonus are the 4 extra centimeters of print height.
-
 # WARNING!
 This project is far from being finished. I have yet to print the parts for the first prototype, please bear with me.
-
-# BOM (Bill of Materials)
-### Needed
-- PTFE tube
-- LM8UU linear bearing
-- GT2 belt 6mm
-- GT2 idlers (6mm belt, 3mm bore)
-### Optional
-- (for those who want Klipper/Mainsail) Raspberry Pi
-- (Not necessary, but recommended for Mainsail) Pi Camera Module v2.1
-### Very Optional mods made by yours truly ;)
-- (Not necessary!) [Dual gear drive extruder](https://www.printables.com/model/946290-dual-gear-drive-extruder-for-prusa-minimini)
-- (Not necessary!) [Raspberry Pi 2 Mount](https://www.printables.com/model/978537-raspberry-pi-2-model-b-mount-for-prusa-minimini)
-
-# Build instructions
-Use the CAD model to understand the build process. Here's a link to the [Onshape document](https://cad.onshape.com/documents/bdba07cfb1c6cbca39f7ad6d/w/d4acb14181f8491cce1dc9c2/e/9745e20551a21d0f0c47736c?renderMode=0&uiState=66f93200321c431edb2c02a8) which will help you with screw names and such. Let me know if build instructions are needed or if anything is wrong with the Onshape doucment.
 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases).
