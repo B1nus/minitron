@@ -1,7 +1,7 @@
 # Minitron
 Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github repository covers the software side of the project, for build instructions and the bill of materials check out [the printables page](https://www.printables.com/model/1022602-minitron).
 
-![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/Images/cad-dark.png)
+![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/blob/main/Images/cad-dark.png)
 
 # WARNING!
 This project is far from being finished. I have yet to print the parts for the first prototype, please bear with me.
