@@ -22,7 +22,7 @@ This project is far from being finished. I have yet to print the parts for the f
 - (Not necessary, but recommended for Mainsail) Pi Camera Module v2.1
 ### Very Optional mods made by yours truly ;)
 - (Not necessary!) [Dual gear drive extruder](https://www.printables.com/model/946290-dual-gear-drive-extruder-for-prusa-minimini)
-- (Not necessary!) [Raspberry Pi Mount](https://www.printables.com/model/978537-raspberry-pi-2-model-b-mount-for-prusa-minimini)
+- (Not necessary!) [Raspberry Pi 2 Mount](https://www.printables.com/model/978537-raspberry-pi-2-model-b-mount-for-prusa-minimini)
 
 # Build instructions
 Use the CAD model to unserstand how to build the printer. Here's a link to the [Onshape document](https://cad.onshape.com/documents/bdba07cfb1c6cbca39f7ad6d/w/d4acb14181f8491cce1dc9c2/e/9745e20551a21d0f0c47736c?renderMode=0&uiState=66f93200321c431edb2c02a8) which will help you with screw names and such. Let me know if build instructions are needed or if anything is wrong with the Onshape doucment.
