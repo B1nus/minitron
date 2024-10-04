@@ -56,13 +56,5 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 Get the values by running ```ifconfig``` on another device connected to the same wifi.
 
-#### note to self
-make toolhead bearing clamp thicker
-make slider rod hole bigger. (also let it go through all the way)
-print bed carriage with 0.4 mm
-idler corner overhang. just remove it all. on both corners.
-make corner rod hole slightly smaller (0.05mm-0.1mm)
-make idler corner screws screw into plastic. no hex nuts necessary.
-
 # Credit
 Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite for the JourneyMaker. I wouldn't have been able to make this printer without you.
