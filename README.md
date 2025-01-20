@@ -58,3 +58,8 @@ Get the values by running ```ifconfig``` on another device connected to the same
 
 # Credit
 Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite for the JourneyMaker. I wouldn't have been able to make this printer without you.
+
+# Problems
+- Loose belts
+- y axis homing
+- slanted bed
