@@ -42,6 +42,8 @@ My printer configuration is backed up automatically to this repository in *print
 Learn more about Klipper from their [documentation](https://www.klipper3d.org/pressure_advance.html).
 
 # Extras
+## Custom extruder and lid
+I have some more [prusa mini mods on my printables account](https://www.printables.com/@Binus_2239073/models). It's up to you if you want these mods as well. The stock parts work just fine to.
 ### Camera
 Check crowsnests logs to find the search path to your camera. Set *cam > device* in the file *crowsnest.conf* to this path. Sometimes it takes a while for the camera to load, you might need to refresh the page as well.
 
