@@ -65,4 +65,4 @@ Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite
 # Problems
 - Loose belts
 - y axis homing
-- slanted bed
+- slanted and wobbly bed
