@@ -7,7 +7,7 @@ Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github reposito
 ![Gif of the minitron printing](https://github.com/B1nus/minitron/blob/main/Images/video.gif)
 
 # The first print
-
+![Picture of my first successfull print on the minitron](https://github.com/B1nus/minitron/blob/main/Images/benchy.jpg)
 
 # WARNING!
 The printer does work, but there are problems with this design:
