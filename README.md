@@ -3,11 +3,17 @@ Turn your Prusa Mini into an upside-down CoreXY 3D Printer. This github reposito
 
 ![Screenshot of the positron CAD project](https://github.com/B1nus/minitron/blob/main/Images/cad-dark.png)
 
-# The first prototype in action
+# Minitron in action
+![Gif of the minitron printing](https://github.com/B1nus/minitron/blob/main/Images/video.gif)
+
+# The first print!
 
 
 # WARNING!
-This project is far from being finished. I have yet to print the parts for the first prototype, please bear with me.
+The printer does work, but there are problems with this design:
+- Loose belts (add an adjustable belt tension on the corner pieces)
+- slanted and wobbly bed (add more supporting plastic)
+- extruder cable too short (use an extension cable)
 
 # MainsailOS
 MainsailOS is the operating system you will run on your control board (the raspberry pi). Mainsail handles the webinterface, scheduling prints, sending gcode and basically anything except communication with hardware which is the Buddy Boards job. [Install Mainsail here](https://docs-os.mainsail.xyz/getting-started/raspberry-pi-os-based). If you don't fell comfortable with Klipper and Mainsail you can try [this modified buddy board firmware](https://github.com/Snake-Edition/P32-FW/releases). Please note that you won't have a place to mount the LCD screen, as this printer is designed to use Mainsail's web interface instead of the LCD.
@@ -61,8 +67,3 @@ Get the values by running ```ifconfig``` on another device connected to the same
 
 # Credit
 Credit to Prusa for the Prusa Mini, Kralyn for the Positron printer and Voxolite for the JourneyMaker. I wouldn't have been able to make this printer without you.
-
-# Problems
-- Loose belts
-- y axis homing
-- slanted and wobbly bed
